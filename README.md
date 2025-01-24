@@ -1,69 +1,104 @@
-# Welcome to your Lovable project
+# Cloud Cost Dashboard
 
-## Project info
+A modern, interactive dashboard for comparing cloud service costs across AWS, Azure, and Google Cloud Platform. Built with React, TypeScript, and Recharts.
 
-**URL**: https://lovable.dev/projects/a6574c0e-d36c-45c5-b578-2c3cba2774d6
+## Features
 
-## How can I edit this code?
+- 📊 Interactive cost comparison graphs
+- 📋 Detailed cost comparison tables
+- 🎨 Modern UI with responsive design
+- 💰 Real-time cost analysis
+- 🔄 Support for multiple cloud providers (AWS, Azure, GCP)
 
-There are several ways of editing your application.
+## Technologies Used
 
-**Use Lovable**
+- React 18+
+- TypeScript
+- Vite
+- Recharts for data visualization
+- Tailwind CSS for styling
+- Shadcn UI components
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/a6574c0e-d36c-45c5-b578-2c3cba2774d6) and start prompting.
+## Getting Started
 
-Changes made via Lovable will be committed automatically to this repo.
+### Prerequisites
 
-**Use your preferred IDE**
+- Node.js 18 or higher
+- npm or yarn package manager
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Installation
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+1. Clone the repository:
+```bash
+git clone https://github.com/deepeshiitjaiswal/clos-cost-dasboard.git
+cd clos-cost-dasboard
+```
 
-Follow these steps:
+2. Install dependencies:
+```bash
+npm install
+```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+3. Start the development server:
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+### Docker Deployment
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+1. Build the Docker image:
+```bash
+docker build -t cloud-cost-dashboard .
+```
 
-**Use GitHub Codespaces**
+2. Run the container:
+```bash
+docker run -p 80:80 cloud-cost-dashboard
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+The application will be available at `http://localhost:80`
 
-## What technologies are used for this project?
+## Project Structure
 
-This project is built with .
+```
+src/
+├── components/         # React components
+│   ├── CostComparison.tsx    # Main cost comparison component
+│   ├── DashboardSidebar.tsx  # Dashboard navigation
+│   └── ui/                   # Reusable UI components
+├── hooks/              # Custom React hooks
+├── lib/               # Utility functions
+└── pages/             # Page components
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## Features in Detail
 
-## How can I deploy this project?
+### Cost Comparison Graph
+- Visual comparison of cloud service costs
+- Interactive tooltips with detailed information
+- Support for various service categories
+- Real-time cost updates
 
-Simply open [Lovable](https://lovable.dev/projects/a6574c0e-d36c-45c5-b578-2c3cba2774d6) and click on Share -> Publish.
+### Detailed Comparison Table
+- Comprehensive cost breakdown
+- Sortable columns
+- Detailed service descriptions
+- Cost metrics in USD
 
-## I want to use a custom domain - is that possible?
+## Contributing
 
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Contact
+
+Deepesh - [@deepeshiitjaiswal](https://github.com/deepeshiitjaiswal)
+
+Project Link: [https://github.com/deepeshiitjaiswal/clos-cost-dasboard](https://github.com/deepeshiitjaiswal/clos-cost-dasboard)
